@@ -1,0 +1,40 @@
+body {
+    margin: 0 20%;
+    padding: 10px 40px;
+    background-color: #DDD;
+}
+h1 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: Monospace;
+}
+
+p {
+    font-size: 20px;
+    font-family: Monospace;
+}
+
+li {
+    font-size: 20px;
+}
+
+.lead {
+    font-size: 15px;
+    text-align: center;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+hr.footer-line {
+    border: 0;
+    height: 2px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin-top: 35px;
+}
+
+.footer-p {
+    text-align: center;
+}
