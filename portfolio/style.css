@@ -1,0 +1,48 @@
+.header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.center-input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+hr.footer-line {
+    border: 0;
+    height: 2px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin-top: 35px;
+}
+
+.footer-p {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .container {
+	max-width: 730px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header,
+    .footer {
+	padding-right: 0;
+	padding-left: 0;
+    }
+    
+    .header {
+	margin-bottom: 30px;
+    }
+    
+    .jumbotron {
+	border-bottom: 0;
+    }
+}
+
