@@ -5,9 +5,11 @@ function rot13(str) {
     for(var i = 0; i < str.length; i++) {
 	if (re.test(str[i])) {
 	    if (str.charCodeAt(i) > 77) {
-		strRotArr.push(String.fromCharCode(str.charCodeAt(i) - 13));		            }
+		strRotArr.push(String.fromCharCode(str.charCodeAt(i) - 13));
+	    }
 	    else {
-		strRotArr.push(String.fromCharCode(str.charCodeAt(i) + 13));		            }	
+		strRotArr.push(String.fromCharCode(str.charCodeAt(i) + 13));
+	    }
 	}
 	else {
 	    strRotArr.push(str[i]);
