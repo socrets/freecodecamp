@@ -1,0 +1,68 @@
+body {
+    font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Georgia, "Times New Roman", "Microsoft YaHei", "微软雅黑",
+    STXIhei, "华文细黑", serif;
+    color: #111;
+    background-color: #a9a9a9;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px;
+    /* border-right: 1px solid black; */
+    /* border-left: 1px solid black; */
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.quote-container {
+    margin-top: 20px;
+    padding: 0 15px;
+    border-radius: 8px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.quote-text {
+    clear: both;
+    font-weight: 800;
+    font-size: 20px;
+    clear: both;
+}
+
+.quote-author {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.random-quote {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    background-color: #555555;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 32px;
+    font-size: 16px;
+    font-weight: 900;
+}
+.random-quote {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.random-quote:hover {
+    background-color: #fffafa;
+    color: #555555;
+}
