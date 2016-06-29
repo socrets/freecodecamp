@@ -10,8 +10,9 @@ var quotes = [
         {author: "The Legend of Zelda", quote: "It’s dangerous to go alone; take this!"}
 ];
 
-function randomQuote() {
+function randomQuoteTweet() {
     var randomButton = document.querySelector("button.random-quote");
+    var tweetButton = document.getElementById("tweet");
     var quoteTextEl = document.querySelector(".quote-text");
     var authorEl = document.querySelector(".quote-author");
 
@@ -19,6 +20,12 @@ function randomQuote() {
 
     randomButton.addEventListener("click", function() {
 	newRandomQuote(quotes, quoteTextEl, authorEl);
+    });
+    
+    tweetButton.addEventListener("click", function() {
+	var tweetText = quoteTextEl.innerText;
+	var url = "https://twitter.com/intent/tweet?text=" + tweetText;
+	window.open(url, "twitter");
     });
 }
 
@@ -32,4 +39,4 @@ function randomGen(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-randomQuote();
+randomQuoteTweet();
