@@ -28,7 +28,6 @@ xhrURL(locUrl).then(function(response) {
     var weatherUrl = api + city + appId;
     xhrURL(weatherUrl).then(function(response){
 	var celDegree = ' &#176C';
-	var FahDegree = ' &#176F';
 	var kelvinTemp = response.main.temp;
 	var weather = response.weather[0].main;
 	getIcon(weather);
@@ -38,6 +37,14 @@ xhrURL(locUrl).then(function(response) {
 	var pWeather = document.getElementById('weather');
 	bTemp.innerHTML = celTemp + celDegree;
 	pWeather.innerHTML = weather;
+	return celTemp;
+    }).then(function(celTemp) {
+	var FahTemp = Math.floor(celTemp * 9 / 5 + 32);
+	var FahDegree = ' &#176F';
+	var bTemp = document.getElementById('temp');
+	bTemp.onclick = function() {
+	    bTemp.innerHTML = FahTemp + FahDegree;
+	};
     });
 });
 
