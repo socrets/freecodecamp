@@ -1,0 +1,22 @@
+h1 {
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.custom {
+    width: auto;
+    display: table;
+    margin: 30px auto;
+    font-size: 5em;
+}
+
+p {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 30px auto;
+}
+
+button {
+    float: none;
+    margin: 10px auto;
+}
